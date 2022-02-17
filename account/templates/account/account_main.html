@@ -1,0 +1,13 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Аккаунт{% endblock %}
+
+{% block content %}
+<div class="features">
+    <h1>Аккаунт</h1>
+    <a href="{% url 'register' %}" class="btn btn-outline-danger">Регистрация</a>
+    <a href="{% url 'login' %}" class="btn btn-outline-warning">Войти</a>
+    <a href="{% url 'profile' %}" class="btn btn-outline-success">Профиль</a>
+    </p>
+</div>
+{% endblock %}

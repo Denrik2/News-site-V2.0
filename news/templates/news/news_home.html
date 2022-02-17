@@ -1,0 +1,15 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Новости{% endblock %}
+
+{% block content %}
+<div class="features">
+    {% for ul in news %}
+        <div class="alert alert-warning">
+            <h3>{{ ul.title }}</h3>
+            <p>{{ ul.anons }}</p>
+            <a href="{% url 'NewsDetail' ul.id %}" class="btn btn-outline-danger">Читать новость</a>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}

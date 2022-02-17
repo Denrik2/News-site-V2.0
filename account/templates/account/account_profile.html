@@ -1,0 +1,12 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Профиль{% endblock %}
+
+{% block content %}
+<div class="features">
+    <h1>Мой профиль</h1>
+
+    Имя пользователя: {{ user.username }} <br>
+    Email: {{ user.email }}
+</div>
+{% endblock %}
